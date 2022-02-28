@@ -29,7 +29,7 @@ nav {
 
 .nav-link{
     text-transform: uppercase;
-    color: #1d2c3d;
+    color: #FFF;
 }
 
 @media (max-width:767px){
@@ -120,8 +120,7 @@ nav {
 
 
 
-@media (min-width: 768px){
-    
+@media (min-width: 768px){  
     nav {
         height: 20rem;
         justify-content: center;
@@ -141,7 +140,7 @@ nav {
         content: '';
         width: 100%;
         height: 2px;
-        background-color: #1d2c3d;
+        background-color: #FFF;
         position: absolute;
         left: 0;
         bottom: -3px;
@@ -156,32 +155,31 @@ nav {
 
     /*aplicando efeito scroll*/
     .scrolling-active{
-        background-color: #fff;
-        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+        background-color: #192735;
     }
 
     .scrolling-active nav{
-        height: 50px;
+        height: 55px;
         font-size: 14px;
         font-weight: bold;
     }
 
     .scrolling-active .logo{
         width: 100px;
-        padding-top: 2px;
+        padding-top: 3px;
     }
 
     .scrolling-active nav a{
-        color: #313131;
+        color: #FFF;
     }
 
     .scrolling-active .nav-link::after{
-        background-color: #313131;
+        background-color: #FFF;
     }
 }
 
 @media (min-width: 1200px) {
     .logo{
-        width: 500px;
+        width: 400px;
     }
 }
