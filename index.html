@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="/css/conteudo.css">
+    <title>Marx | Desenvolvedor Front End</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="/img/logo.png" alt="Marx"></a>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Início</a></li>
+                <li><a class="nav-link" href="#">Sobre</a></li>
+                <li><a class="nav-link" href="#">Habilidades</a></li>
+                <li><a class="nav-link" href="#">Projetos</a></li>
+                <li><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-home">
+
+        </section>
+
+        <section class="conteudo-sobre">
+
+        </section>
+
+    </main>
+
+    <script src="/js/mobile-navbar.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 1;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+</body>
+
+</html>

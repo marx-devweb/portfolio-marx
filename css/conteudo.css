@@ -1,0 +1,80 @@
+.conteudo-home{
+    width: 100%;
+    height: 100vh;
+    background: url("/img/img-01.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1000;
+}
+
+.conteudo-home::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: -1000;
+}
+
+.conteudo-sobre{
+    width: 100%;
+    height: 100vh;
+    background: url("/img/img-02.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1000;
+    
+}
+.conteudo-sobre::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: -1000;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    width: 100%;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    padding: 2em ;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 7px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-size: 25px;
+    color: #1d2c3d;
+
+}
+
+
+
+
+
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem{
+    height: 72px;
+    display: block;
+    margin: 0 auto;
+}
