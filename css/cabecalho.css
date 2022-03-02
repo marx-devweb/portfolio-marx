@@ -12,13 +12,6 @@ nav {
     font-weight: bold;
 }
 
-/*
-.logo:hover{
-    opacity: 0.7;
-    transition: 0.3s;
-}
-*/
-
 .nav-list{
     display: flex;
     justify-content: space-around;
@@ -35,11 +28,6 @@ nav {
     nav{
         justify-content: space-around;
         height: 8vh;
-    }
-
-    .logo {
-        width: 90px;
-        padding-top: 4px;    
     }
 
     .nav-list{
@@ -122,17 +110,16 @@ nav {
 
 }
 
-@media (min-width: 992px){  
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){  
     nav {
         justify-content: space-around;
-        height: 20vh;
+        height: 15vh;
         font-size: 15px;
         transition: height .9s ease;
-    }
-
-    .logo{
-        width: 15em;
-        transition: .9s;
     }
 
     .nav-link{
@@ -184,11 +171,6 @@ nav {
         font-weight: bold;
     }
 
-    .scrolling-active .logo{
-        width: 6em;
-        padding-top: 3px;
-    }
-
     .scrolling-active nav a{
         color: #1D2C3D;
     }
@@ -200,8 +182,6 @@ nav {
     .scrolling-active .rede-socias-logo{
         width: 30px;
     }
-
-
 }
 
 @media (min-width: 1200px){
