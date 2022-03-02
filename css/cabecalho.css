@@ -3,9 +3,7 @@
 header{
     position: fixed;
     width: 100%;
-    top: 0;
     transition: background-color .5s ease;
-    z-index: 1000;
 }
 
 nav {
@@ -14,14 +12,15 @@ nav {
     font-weight: bold;
 }
 
+/*
 .logo:hover{
     opacity: 0.7;
     transition: 0.3s;
 }
+*/
 
 .nav-list{
     display: flex;
-    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -29,39 +28,36 @@ nav {
 
 .nav-link{
     text-transform: uppercase;
-    color: #FFF;
 }
 
 @media (max-width:767px){
-    header{
-        background: #FFF;
-    }
-
+    
     nav{
         justify-content: space-around;
         height: 8vh;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        backdrop-filter: blur( 7px);
     }
 
     .logo {
-        width: 100px;
+        width: 90px;
+        padding-top: 4px;    
     }
 
     .nav-list{
         flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #FFF;
+        background: #1D2C3D;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;   
     }
     
     .nav-link{
         transition: 0.3s;
+        color: #fff;
     }
 
     .nav-link:hover{
@@ -80,7 +76,7 @@ nav {
     .mobile-menu div{
         width: 32px;
         height: 2px;
-        background: #1d2c3d;
+        background: #1D2C3D;
         margin: 8px;
         transition: 0.3s;
     }
@@ -118,29 +114,38 @@ nav {
     }
 }
 
+@media (min-width: 576px) {
 
+}
 
-@media (min-width: 768px){  
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px){  
     nav {
-        height: 20rem;
-        justify-content: center;
+        justify-content: space-around;
+        height: 20vh;
+        font-size: 15px;
         transition: height .9s ease;
     }
 
     .logo{
-        width: 200px;
+        width: 15em;
+        transition: .9s;
     }
 
     .nav-link{
-        margin: 0 1rem;
+        margin: 0 30px;
         position: relative;
+        color: #1D2C3D;
     }
     
     .nav-link::after{
         content: '';
         width: 100%;
         height: 2px;
-        background-color: #FFF;
+        background-color: #1D2C3D;
         position: absolute;
         left: 0;
         bottom: -3px;
@@ -155,31 +160,32 @@ nav {
 
     /*aplicando efeito scroll*/
     .scrolling-active{
-        background-color: #192735;
+        background-color: #FFF;
     }
 
     .scrolling-active nav{
-        height: 55px;
-        font-size: 14px;
+        height: 4em;
+        font-size: 12px;
         font-weight: bold;
     }
 
     .scrolling-active .logo{
-        width: 100px;
+        width: 6em;
         padding-top: 3px;
     }
 
     .scrolling-active nav a{
-        color: #FFF;
+        color: #1D2C3D;
     }
 
     .scrolling-active .nav-link::after{
-        background-color: #FFF;
+        background-color: #1D2C3D;
     }
 }
 
-@media (min-width: 1200px) {
-    .logo{
-        width: 400px;
+@media (min-width: 1200px){
+    nav{
+        padding-left: calc((100% - 960px) /2);
+        padding-right: calc((100% - 960px) /2) ;
     }
 }
