@@ -158,6 +158,21 @@ nav {
         transform: scaleX(1);
     }
 
+    .rede-sociais{
+        display: flex;
+        align-items: center;
+    }
+
+    .rede-socias-logo{
+        width: 2rem;
+        margin-left: 15px;
+    }
+
+    .rede-socias-logo:hover{
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
     /*aplicando efeito scroll*/
     .scrolling-active{
         background-color: #FFF;
@@ -181,6 +196,12 @@ nav {
     .scrolling-active .nav-link::after{
         background-color: #1D2C3D;
     }
+
+    .scrolling-active .rede-socias-logo{
+        width: 30px;
+    }
+
+
 }
 
 @media (min-width: 1200px){

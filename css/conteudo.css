@@ -53,10 +53,6 @@
         background-size: cover;
         position: relative;
         z-index: -1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
     }
     
     .container-home::after{
@@ -64,25 +60,29 @@
         width: inherit;
         height: inherit;
         position: absolute;
-        top: 0;
-        left: 0;
         background-color: rgba(255, 255, 255, 0.8);
         z-index: -1000;
     }
+
+    .conteudo-home{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     
     .conteudo-home-logo{
-        width: 400px;
+        width: 35rem;
         margin-right: 20px;
     }
 
     .conteudo-home h1{
         font-family: 'Righteous', cursive;
-        font-size: 60px;
+        font-size: 80px;
         color: #2373B5;
     }
 
     .conteudo-home h2{
-        font-size: 50px;
+        font-size: 70px;
         color: #1D2C3D;
     }
 
@@ -96,6 +96,4 @@
         /*z-index: -1000;*/
         
     }
-
-    
  }
