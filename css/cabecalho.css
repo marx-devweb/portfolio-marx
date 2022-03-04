@@ -204,6 +204,10 @@ nav {
     .scrolling-active .nav-link::after{
         background-color: #1D2C3D;
     }
+
+    .scrolling-active .rede-sociais{
+        display: none;
+    }
 }
 
 @media (min-width: 992px){
