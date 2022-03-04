@@ -15,19 +15,22 @@ nav {
 .nav-list{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     text-transform: uppercase;
 }
 
 .nav-link{
     text-transform: uppercase;
+   
 }
 
-@media (max-width:767px){
-    
+@media (max-width:767px){    
     nav{
         justify-content: space-around;
         height: 8vh;
+    }
+
+    .logo-nav{
+        width: 5rem;
     }
 
     .nav-list{
@@ -54,6 +57,10 @@ nav {
 
     .nav-list li{
         opacity: 0;
+    }
+
+    .rede-sociais{
+        display: none;
     }
 
     .mobile-menu{
@@ -102,28 +109,25 @@ nav {
     }
 }
 
-@media (min-width: 576px) {
-
-}
 
 @media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px){
-
-}
-
-@media (min-width: 1200px){  
     nav {
         justify-content: space-around;
         height: 15vh;
-        font-size: 15px;
+        font-size: 12px;
         transition: height .9s ease;
     }
 
+    .logo-nav{
+        display: none;
+    }
+
+    .nav-list{
+        gap: 2rem;
+    }
+
     .nav-link{
-        margin: 0 30px;
+        
         position: relative;
         color: #1D2C3D;
     }
@@ -148,17 +152,27 @@ nav {
     .rede-sociais{
         display: flex;
         align-items: center;
+        gap: .6rem;
     }
 
     .rede-socias-logo{
-        width: 2rem;
-        margin-left: 15px;
+        width: 1.5rem;
     }
 
     .rede-socias-logo:hover{
-        opacity: 0.7;
-        transition: 0.3s;
+        opacity: .7;
+        transition: .3s;
     }
+
+    .link-logo-nav{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    
 
     /*aplicando efeito scroll*/
     .scrolling-active{
@@ -167,8 +181,20 @@ nav {
 
     .scrolling-active nav{
         height: 4em;
-        font-size: 12px;
-        font-weight: bold;
+    }
+
+    .scrolling-active .link-logo-nav {
+        display: flex;
+    }
+
+    .scrolling-active .logo-nav{
+        display: flex;
+        width: 5rem;
+    }
+
+    .scrolling-active .logo-nav:hover{
+        opacity: .7;
+        transition: .3s;
     }
 
     .scrolling-active nav a{
@@ -178,15 +204,31 @@ nav {
     .scrolling-active .nav-link::after{
         background-color: #1D2C3D;
     }
+}
 
-    .scrolling-active .rede-socias-logo{
-        width: 30px;
+@media (min-width: 992px){
+    nav {
+        font-size: 14px;
+    }
+
+    .nav-list{
+        gap: 3rem;
+    }
+
+    .rede-socias-logo{
+        width: 25px;
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px){  
     nav{
+        height: 20vh;
+        font-size: 15px;
         padding-left: calc((100% - 960px) /2);
-        padding-right: calc((100% - 960px) /2) ;
+        padding-right: calc((100% - 960px) /2);
     }
+
+    .rede-socias-logo{
+        width: 30px;
+    }    
 }

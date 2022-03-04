@@ -14,21 +14,15 @@
 <body>
     <header>
         <nav>
-            <div>
-                <ul class="nav-list">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="#">Sobre</a></li>
-                    <li><a class="nav-link" href="#">Habilidades</a></li>
-                    <li><a class="nav-link" href="#">Projetos</a></li>
-                    <li><a class="nav-link" href="#">Contato</a></li>
-                </ul>
-
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
+            <a class="link-logo-nav" href="index.html">
+                <img class="logo-nav" src="/img/logo.png" alt="">
+            </a>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                <li><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
 
             <div class="rede-sociais">
                 <a href="https://github.com/marx-devweb" target="_blank">
@@ -41,11 +35,17 @@
                     <img class="rede-socias-logo" src="img/logo-instagram.png" alt="">
                 </a>
             </div>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="container-home">
+        <section id="home" class="container-home container-section">
             <div class="conteudo-home">
                 <img class="conteudo-home-logo" src="img/logo.png" alt="Marx">
 
@@ -56,33 +56,34 @@
             </div>
         </section>
 
-        <section class="container-sobre">
+        <section id="sobre" class="container-section">
             <div class="conteudo-sobre">
-                <div>
-                    <h1>Sobre</h1>
-                </div>
+                <h1>Sobre</h1>
             </div>
         </section>
 
-        <section class="container-habilidades">
+        <section id="habilidades" class="container-section">
+            <div class="conteudo-habilidades">
+                <h1>Habilidades</h1>
+            </div>
         </section>
 
-        <section class="container-projetos">
+        <section id="projetos" class="container-section">
+            <div class="conteudo-projetos">
+                <h1>Projetos</h1>
+            </div>
         </section>
 
-        <section class="container-contato">
+        <section id="contato" class="container-section">
+            <div class="conteudo-contato">
+                <h1>Contato</h1>
+            </div>
         </section>
     </main>
 
 
-    <script src="js/mobile-navbar.js"></script>
-    <script>
-        window.addEventListener('scroll', function () {
-            let header = document.querySelector('header');
-            let windowPosition = window.scrollY > 1;
-            header.classList.toggle('scrolling-active', windowPosition);
-        })
-    </script>
+    <script type="text/javascript" src="js/mobile-navbar.js"></script>
+    <script type="text/javascript" src="js/scrool-suave-link-interno.js"></script>
 
 </body>
 
