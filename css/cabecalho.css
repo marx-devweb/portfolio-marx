@@ -113,8 +113,8 @@ nav {
 @media (min-width: 768px) {
     nav {
         justify-content: space-around;
-        height: 15vh;
-        font-size: 12px;
+        height: 20vh;
+        font-size: .9rem;
         transition: height .9s ease;
     }
 
@@ -123,7 +123,7 @@ nav {
     }
 
     .nav-list{
-        gap: 2rem;
+        gap: 5rem;
     }
 
     .nav-link{
@@ -149,21 +149,6 @@ nav {
         transform: scaleX(1);
     }
 
-    .rede-sociais{
-        display: flex;
-        align-items: center;
-        gap: .6rem;
-    }
-
-    .rede-socias-logo{
-        width: 1.5rem;
-    }
-
-    .rede-socias-logo:hover{
-        opacity: .7;
-        transition: .3s;
-    }
-
     .link-logo-nav{
         display: none;
     }
@@ -171,16 +156,20 @@ nav {
     .mobile-menu{
         display: none;
     }
-
     
 
     /*aplicando efeito scroll*/
     .scrolling-active{
-        background-color: #FFF;
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .scrolling-active nav{
         height: 4em;
+    }
+
+    .scrolling-active .nav-list{
+        gap: 2rem;
     }
 
     .scrolling-active .link-logo-nav {
@@ -204,35 +193,18 @@ nav {
     .scrolling-active .nav-link::after{
         background-color: #1D2C3D;
     }
-
-    .scrolling-active .rede-sociais{
-        display: none;
-    }
 }
 
 @media (min-width: 992px){
     nav {
-        font-size: 14px;
-    }
-
-    .nav-list{
-        gap: 3rem;
-    }
-
-    .rede-socias-logo{
-        width: 25px;
+        font-size: 1rem;
     }
 }
 
 @media (min-width: 1200px){  
     nav{
         height: 20vh;
-        font-size: 15px;
         padding-left: calc((100% - 960px) /2);
         padding-right: calc((100% - 960px) /2);
     }
-
-    .rede-socias-logo{
-        width: 30px;
-    }    
 }

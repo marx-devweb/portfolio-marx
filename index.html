@@ -7,14 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="css/conteudo.css">
+    <link rel="stylesheet" type="text/css" href="css/conteudo-home.css">
+    <link rel="stylesheet" type="text/css" href="css/conteudo-sobre.css">
+    <link rel="stylesheet" type="text/css" href="css/conteudo-habilidades.css">
+    <link rel="stylesheet" type="text/css" href="css/conteudo-projeto.css">
+    <link rel="stylesheet" type="text/css" href="css/conteudo-contato.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/">
+    <link rel="manifest" href="/site.webmanifest">
+
     <title>Marx | Desenvolvedor Front End</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="link-logo-nav" href="index.html">
+            <a class="link-logo-nav" href="">
                 <img class="logo-nav" src="/img/logo.png" alt="">
             </a>
             <ul class="nav-list">
@@ -23,6 +33,25 @@
                 <li><a class="nav-link" href="#projetos">Projetos</a></li>
                 <li><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="container-home">
+            <div class="conteudo-home">
+                <img class="conteudo-home-logo" src="img/logo.png" alt="Marx">
+
+                <div>
+                    <h1>Desenvolvedor</h1>
+                    <h2>Front-End</h2>
+                </div>
+            </div>
 
             <div class="rede-sociais">
                 <a href="https://github.com/marx-devweb" target="_blank">
@@ -35,46 +64,30 @@
                     <img class="rede-socias-logo" src="img/logo-instagram.png" alt="">
                 </a>
             </div>
-
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="container-home container-section">
-            <div class="conteudo-home">
-                <img class="conteudo-home-logo" src="img/logo.png" alt="Marx">
-
-                <div>
-                    <h1>Desenvolvedor</h1>
-                    <h2>Front-End</h2>
-                </div>
-            </div>
         </section>
 
-        <section id="sobre" class="container-section">
+        <section id="sobre" class="container-sobre">
             <div class="conteudo-sobre">
                 <h1>Sobre</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla magnam officiis nostrum cupiditate
+                    quibusdam officia ipsum quia ipsam repudiandae harum fugit fugiat, aliquam incidunt vero tempora.
+                    Vel eaque debitis eum.</p>
             </div>
         </section>
 
-        <section id="habilidades" class="container-section">
+        <section id="habilidades" class="container-habilidades">
             <div class="conteudo-habilidades">
                 <h1>Habilidades</h1>
             </div>
         </section>
 
-        <section id="projetos" class="container-section">
-            <div class="conteudo-projetos">
+        <section id="projetos" class="container-projeto">
+            <div class="conteudo-projeto">
                 <h1>Projetos</h1>
             </div>
         </section>
 
-        <section id="contato" class="container-section">
+        <section id="contato" class="container-contato">
             <div class="conteudo-contato">
                 <h1>Contato</h1>
             </div>
